@@ -1,0 +1,21 @@
+{
+  "name": "blog-post",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "philipjc <philipcox83@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "0.21.0",
+    "html-webpack-plugin": "1.6.2",
+    "node-libs-browser": "0.5.3",
+    "style-loader": "0.13.0",
+    "webpack": "1.12.2",
+    "webpack-dev-server": "1.12.1",
+    "webpack-merge": "0.2.0"
+  }
+}
