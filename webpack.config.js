@@ -14,7 +14,18 @@ module.exports = {
 
   module: {
     loaders: [
-      { test: /\.css$/, loaders: ['style', 'css'], include: path.resolve(ROOT_PATH, 'app') }
+      { test: /\.scss$/,
+        loaders: ['style', 'css', 'sass'],
+        include: path.resolve(ROOT_PATH, 'app')
+      },
+      {
+        test: /\.jsx?$/,
+        loader: 'babel',
+        query: {
+          presets: ['react', 'es2015']
+        },
+        include: path.resolve(ROOT_PATH, 'app')
+      }
     ]
   },
 

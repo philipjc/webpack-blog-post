@@ -1,10 +1,16 @@
-var Header = require('./component');
+import './styles/main.scss';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-var body = document.querySelector('body');
-var header = document.createElement('div');
+import HeaderComponent from './component.jsx';
 
-header.className = 'header';
-document.body.appendChild(header);
 
-var headerElement = document.querySelector('.header');
-headerElement.appendChild(Header());
+main();
+
+function main() {
+
+  const app = document.createElement('div');
+  document.body.appendChild(app);
+  ReactDOM.render(<HeaderComponent title="React Baby!" />, app);
+  
+}
