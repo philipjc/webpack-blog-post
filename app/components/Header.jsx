@@ -4,7 +4,7 @@ const propTypes = {
   title: React.PropTypes.string
 };
 
-export default class HeaderComponent extends React.Component {
+export default class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,4 +21,4 @@ export default class HeaderComponent extends React.Component {
   }
 }
 
-HeaderComponent.propTypes = propTypes;
+Header.propTypes = propTypes;
